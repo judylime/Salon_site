@@ -1,0 +1,204 @@
+$red: rgb(249, 38, 27);
+$white: white;
+$transparent-black: rgba(0,0,0,0.3);
+$transparent-black-dark: rgba(0,0,0,0.6);
+$black-dark: rgb(0, 0, 0);
+
+html {
+    scroll-behavior: smooth;
+}
+
+#nav {
+    background-color: $black-dark !important;
+}
+
+.navbar-nav {
+    font-size: 1.25rem;
+    @media (min-width: 768px) {
+        font-size: 1rem;
+    }
+}
+
+.aw-product-text {
+    padding: 10px 0px;
+    position: relative;
+    background-color: $black-dark;
+    color: $white !important;
+}
+
+a {
+    color: $red;
+}
+
+a:hover {
+    color: $black-dark
+}
+
+.aw-text-white {
+    color: $white
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: $white;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: $white;
+}
+
+.card-deck {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .card-deck .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 0%;
+    flex: 1 0 0%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-right: 15px;
+    margin-bottom: 0;
+    margin-left: 15px;
+  }
+
+.aw-logo {
+    height: 50px;
+}
+
+.aw-logo-2x {
+    height: 100px;
+}
+
+.bg-black {
+    color: $white;
+    background-color: black;
+}
+
+.bg-danger {
+    background-color: $red;
+}
+
+// .table-hover tbody tr:hover {
+//     background-color: $transparent-black;
+// }
+
+// .table-hover-override tbody tr:hover {
+//     color: white !important;
+//     background-color: black;
+// }
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: $white !important;
+  background-color: $red;
+}
+
+.nav-link:hover {
+    @media (any-hover: hover) {
+        color: $red !important;
+    }
+}
+
+.aw-stylists, .aw-stylists:hover { 
+    font-weight: bold;
+    color: $red;
+}
+
+.aw-circle {
+  height: 45px;
+  width: 45px;
+  background-color: $red;
+  border-radius: 50%;
+  display: inline-block;
+  color: $white;
+  padding-top: 11px;
+}
+
+.aw-circle:hover {
+    background-color: $red;
+    color: $white;
+    @media (any-hover: hover) {
+        background-color: $black-dark;
+        color: $white;
+    }
+  }
+
+#home {
+    background-image: url("../img/pexels-photo-853427.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.aw-vertical-align {
+    //background-color: $transparent-black;
+    height: 70vh;
+    @media (min-width: 576px) {
+        height: 100vh;
+    }
+}
+
+.aw-box {
+    background-color: $transparent-black;
+    width: 325px;
+    padding: 25px;
+    @media (min-width: 525px) {
+        width: 425px;
+        padding: 35px;
+    }
+    @media (min-width: 676px) {
+        width: 600px;
+        padding: 50px;
+    }
+}
+
+.aw-heading {
+    font-weight: 900;
+    font-size: 2.75rem;
+    @media (min-width: 676px) {
+        font-size: 3.75rem;
+    }
+}
+
+.aw-profile-img {
+    height: 150px;
+    width: 150px;
+}
+
+.aw-map-responsive {
+    overflow:hidden;
+    padding-bottom:75%;
+    position:relative;
+    height:0;
+    & iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+    }
+}
+
+section:before {
+    height: 90px;
+    content: "";
+    display:block;
+}
+
+.container-fluid {
+    @media (min-width: 992px) {
+        max-width: 960px;
+    }
+    @media (min-width: 1200px) {
+        max-width: 1140px;
+    }
+}
